@@ -4,11 +4,33 @@
     box-sizing: border-box;
 }
 
-.titulo h1 {
-    color: #fff;
-}
-
-.p-c{
+.p-c {
     width: 17%;
     height: 20%;
+}
+
+.pizza-calabresa {
+    position: relative;
+    display: inline-block;
+}
+
+.pizza-calabresa .tooltip {
+    position: absolute;
+    top: 20px; /* Ajuste a posição vertical da janela de exibição */
+    left: 250px;
+    width: 200px; /* Ajuste a largura da janela de exibição */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.pizza-calabresa:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tooltip img {
+    width: 200%; /* Ajuste a largura da imagem */
+    height: 200%; /* Mantém a proporção de altura */
 }
